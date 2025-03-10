@@ -1,7 +1,13 @@
-<script>
+<script lang="ts">
 	import { base } from '$app/paths';
+
+	let { data } = $props();
 </script>
 
 <h1>Blog</h1>
 
-<a href="{base}/blog/1"> hello </a>
+{#each data.posts as post}
+	<a href="{base}/blog/{post.slug}">{post.title}</a>
+	<p class="date">{post.date}</p>
+	<p class="description">{post.description}</p>
+{/each}
