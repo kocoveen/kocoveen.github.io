@@ -11,6 +11,13 @@ const config = {
 	})],
 
 	kit: {
+		prerender: {
+			entries: [
+				'/',
+				'/blog',
+			]
+		},
+
 		adapter: adapter({
 			fallback: '404.html'
 		}),
