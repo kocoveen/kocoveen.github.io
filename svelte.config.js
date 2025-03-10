@@ -15,12 +15,13 @@ const config = {
 			entries: [
 				'/',
 				'/blog',
-				'/blog/1'
+				// '/blog/1'
 			]
 		},
 
 		adapter: adapter({
-			fallback: '404.html'
+			fallback: '404.html',
+			strict: false,
 		}),
 
 		// paths: {
