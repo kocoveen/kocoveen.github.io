@@ -15,6 +15,7 @@ const config = {
 			entries: [
 				'/',
 				'/blog',
+				'/blog/*'
 			]
 		},
 
